@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hover Image Change</title>
+</head>
+<body>
+  <img id="hoverImage" src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-cartoon-hand-painted-dolphins-cute-dolphin-little-dolphin-png-image_3821858.jpg" alt="Hover to change" width="200" height="200">
+
+  <script>
+    const imageElement = document.getElementById('hoverImage');
+    const image1 = 'https://png.pngtree.com/png-clipart/20190516/original/pngtree-cartoon-hand-painted-dolphins-cute-dolphin-little-dolphin-png-image_3821858.jpg';
+    const image2 = 'https://png.pngtree.com/png-clipart/20201208/original/pngtree-halloween-vector-happy-halloween-halloween-party-halloween-background-halloween-night-halloween-png-image_5520448.jpg';
+
+    imageElement.addEventListener('mouseover', () => {
+      imageElement.src = image2;
+    });
+
+    imageElement.addEventListener('mouseout', () => {
+      imageElement.src = image1;
+    });
+  </script>
+</body>
+</html>
