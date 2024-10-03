@@ -200,29 +200,31 @@
 
 
 // #G
-function print({ a: val1 = 1, b: val2 = {}, c: val3 = false } = {}) {
+function print(objects = {}) {
+  const { a: val1 = 1, b: val2 = {}, c: val3 = false } = objects || {};
+
   console.log(val1);
   console.log(val2);
   console.log(val3);
 }
 
 // Test cases
-print(); // Sử dụng toàn bộ giá trị mặc định
+print(); 
 // 1
 // {}
 // false
 
-print({ a: 3, b: { d: 'f'}, c: true }); // Không sử dụng giá trị mặc định
+print({ a: 3, b: { d: 'f'}, c: true }); 
 // 3
 // { d: 'f' }
 // true
 
-print(null); // Sử dụng toàn bộ giá trị mặc định vì null không phải là object
+print(null); 
 // 1
 // {}
 // false
 
-print(undefined); // Sử dụng toàn bộ giá trị mặc định
+print(undefined); 
 // 1
 // {}
 // false

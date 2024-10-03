@@ -24,22 +24,20 @@
 
 
 // #C
-// Declare statement
-// let score = 85;
+// let score = 90;
 
-// // Conditional statement
-// if (score >= 90) {
-//     console.log("Grade: A");
-// } else if (score >= 80) {     // true
-//     console.log("Grade: B");  // This block will be executed
-// } else if (score >= 70) {
-//     console.log("Grade: C");
-// } else {
-//     console.log("Grade: F");
+// const checkGrade = (score) => {
+//     let grade 
+//     if(score < 70) grade ='F';
+
+//     if(score <= 80) grade ='C'
+//     else if(score <= 90) grade = 'B'
+//     else grade = 'A'
+
+//     return grade
 // }
 
-// console.log("Ket thuc conditional statement");
-
+// console.log("Grade dat duoc la: " + checkGrade(score)) // Grade dat duoc la: B
 
 // #D
 // let day = 3;
